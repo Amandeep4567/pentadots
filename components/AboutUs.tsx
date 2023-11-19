@@ -23,8 +23,8 @@ export default function AboutUs() {
           <Button type="button" title="Know More" variant="btn_indigo" />
         </div>
       </div>
-      <div className="lg:w-1/2 ml-24">
-        <Image src="/hero1.png" alt="services" width={470} height={470} />
+      <div className="lg:w-1/2 xl:ml-48">
+        <Image src="/hero1.svg" alt="services" width={470} height={470} />
       </div>
     </section>
   );

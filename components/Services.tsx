@@ -3,9 +3,9 @@ import Card from "./Card";
 
 export default function Services() {
   return (
-    <section className="max-container padding-container my-10">
+    <section className="max-container padding-container my-16 text-center">
       <div className="">
-        <h1 className="text-[#7E57C2] bold-40 font-bold mb-6 text-primary text-center">
+        <h1 className="text-[#7E57C2] bold-40 font-bold mb-6 text-primary">
           Our Services
         </h1>
         <div className="">
