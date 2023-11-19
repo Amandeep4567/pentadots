@@ -3,7 +3,7 @@ import SmallCard from "./SmallCard";
 export default function Services() {
   return (
     <section className="bg-gray-10 max-container padding-container p-10 my-10">
-      <div className="">
+      <div className="m-auto">
         <h1 className="text-[#7E57C2] bold-40 font-bold text-primary text-center">
           Industries we Serve
         </h1>

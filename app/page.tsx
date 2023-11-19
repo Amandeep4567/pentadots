@@ -1,5 +1,4 @@
 import AboutUs from "@/components/AboutUs";
-import Button from "@/components/Button";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Industries from "@/components/Industries";

@@ -25,3 +25,24 @@ export const navLinks = [
   { href: "/", key: "faq", label: "FaQ" },
   // { href: "/", key: "contact_us", label: "Contact Us" },
 ];
+
+export const footerLinks = [
+  {
+    title: "Learn More",
+    links: [
+      "About Us",
+      "Services",
+      "Solution",
+      "Startups",
+      "Privacy Policy",
+      "Contact Us",
+    ],
+  },
+];
+
+export const footerContactLinks = {
+  links: [
+    { label: "Admin Number", value: "123-456-7890" },
+    { label: "Admin Email", value: "pentadots@gmail.com" },
+  ],
+};
