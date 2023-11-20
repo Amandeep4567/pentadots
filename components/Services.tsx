@@ -3,7 +3,7 @@ import Card from "./Card";
 
 export default function Services() {
   return (
-    <section className="max-container padding-container my-16 text-center">
+    <section className="bg-gray-10 max-container padding-container my-16 py-10 text-center">
       <div className="">
         <h1 className="text-[#7E57C2] bold-40 font-bold mb-6 text-primary">
           Our Services

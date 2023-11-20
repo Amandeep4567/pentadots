@@ -22,7 +22,7 @@ export default function () {
             {footerLinks.map((footerLink) => (
               <div className="">
                 <h1 className="bold-24 mb-8">{footerLink.title}</h1>
-                <ul className="flex flex-col gap-4 text-gray-30">
+                <div className="flex flex-col gap-4 text-gray-30">
                   {footerLink.links.map((link) => (
                     <p>
                       <Link href="/" key={link}>
@@ -30,25 +30,30 @@ export default function () {
                       </Link>
                     </p>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </div>
           <div className="flex flex-col">
             <div className="">
               <h1 className="bold-24 mb-8">Contact Us</h1>
-              {footerContactLinks.links.map((link) => (
-                <Link
-                  href="/"
-                  key={link.label}
-                  className="flex gap-4 md:flex-col lg:flex-row"
-                >
-                  <p className="whitespace-nowrap">{link.label}:</p>
-                  <p className="bold-16 whitespace-nowrap text-blue-70">
-                    {link.value}
-                  </p>
-                </Link>
-              ))}
+              <div className="flex flex-col gap-4 text-gray-30">
+                {footerContactLinks.links.map((link) => (
+                  <Link
+                    href="/"
+                    key={link.label}
+                    className="flex gap-4 md:flex-col lg:flex-row"
+                  >
+                    <p key={link.label}>{link.label}:</p>
+                    <p
+                      key={link.value}
+                      className="bold-16 whitespace-nowrap text-blue-70"
+                    >
+                      {link.value}
+                    </p>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>

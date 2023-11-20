@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function AboutUs() {
   return (
-    <section className="bg-gray-10 max-container padding-container py-4 flex flex-col-reverse lg:flex-row">
+    <section className="max-container padding-container py-4 flex flex-col-reverse lg:flex-row">
       <div className="lg:w-1/2 text-center lg:text-left lg:pr-8">
         <h1 className="text-[#7E57C2] bold-40 font-bold mb-6 text-primary">
           About Us

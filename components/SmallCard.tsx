@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 type smallCardProps = {
-  src: String | StaticImport;
-  title: String;
+  src: string;
+  title: string;
 };
 
 export default function SmallCard({ src, title }: smallCardProps) {

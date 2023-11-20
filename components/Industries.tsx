@@ -1,4 +1,4 @@
-import SmallCard from "./SmallCard";
+import SmallCard from "./smallCard";
 
 export default function Services() {
   return (
