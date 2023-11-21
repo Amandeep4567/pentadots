@@ -3,13 +3,13 @@ import Card from "./Card";
 
 export default function Services() {
   return (
-    <section className="bg-gray-10 max-container padding-container my-16 py-10 text-center">
+    <section className="bg-gray-10 max-container padding-container mb-16 py-12 text-center">
       <div className="">
         <h1 className="text-[#7E57C2] bold-40 font-bold mb-6 text-primary">
           Our Services
         </h1>
         <div className="">
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             <Card
               src="/mobiledev.svg"
               style="bg-gray-10"

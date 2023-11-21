@@ -10,7 +10,7 @@ type CardProps = {
 
 export default function Card({ src, heading, details, style }: CardProps) {
   return (
-    <div className={`${style} p-4 m-4 rounded-md shadow-md`}>
+    <div className={`${style} p-4 md:m-2 rounded-md shadow-md`}>
       <Image
         src={src}
         alt="innovative"
@@ -21,7 +21,7 @@ export default function Card({ src, heading, details, style }: CardProps) {
       <h2 className="bold-24 flex justify-center pb-4">{heading}</h2>
       <p className="text-gray-700 flex text-center">{details}</p>
       <div className="flex justify-center mt-6">
-        <Button type="button" title="Explore" variant="btn_indigo" />
+        <Button type="button" title="Explore" variant="btn_indigo mb-2" />
       </div>
     </div>
   );

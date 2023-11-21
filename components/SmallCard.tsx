@@ -8,7 +8,7 @@ type smallCardProps = {
 export default function SmallCard({ src, title }: smallCardProps) {
   return (
     <div className="m-auto">
-      <div className="p-6">
+      <div className="p-0 sm:p-6">
         <Image
           alt="Industries"
           src={src}

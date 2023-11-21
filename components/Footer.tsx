@@ -2,12 +2,12 @@ import React from "react";
 import Link from "next/link";
 import { footerLinks, footerContactLinks } from "@/Constants";
 
-export default function () {
+export default function Footer() {
   return (
     <footer className="flexCenter mb-4">
-      <div className="padding-container max-container flex w-full flex-col gap-4">
-        <div className="flex flex-row gap-24">
-          <div className="">
+      <div className="padding-container max-container flex flex-col gap-4">
+        <div className="flex flex-col lg:flex-row gap-10">
+          <div className="text-center lg:text-left">
             <Link href="/">
               <h1 className="text-[28px] font-extrabold text-[#7E57C2]">
                 Penta<span className="text-black">dots</span>
@@ -15,29 +15,27 @@ export default function () {
             </Link>
             <h1 className="bold-20 mt-10">Address:</h1>
             <p className="text-md text-gray-30 mt-1">
-              Calicut, Thrissur, Banglore
+              Calicut, Thrissur, Bangalore
             </p>
           </div>
-          <div className="ml-10">
+          <div className="text-center lg:text-left">
             {footerLinks.map((footerLink) => (
-              <div className="">
+              <div key={footerLink.title} className="">
                 <h1 className="bold-24 mb-8">{footerLink.title}</h1>
                 <div className="flex flex-col gap-4 text-gray-30">
                   {footerLink.links.map((link) => (
-                    <p>
-                      <Link href="/" key={link}>
-                        {link}
-                      </Link>
+                    <p key={link}>
+                      <Link href="/">{link}</Link>
                     </p>
                   ))}
                 </div>
               </div>
             ))}
           </div>
-          <div className="flex flex-col">
+          <div className="text-center lg:text-left">
             <div className="">
               <h1 className="bold-24 mb-8">Contact Us</h1>
-              <div className="flex flex-col gap-4 text-gray-30">
+              <div className="flex flex-col content-center items-center gap-4 text-gray-30">
                 {footerContactLinks.links.map((link) => (
                   <Link
                     href="/"
